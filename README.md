@@ -2,7 +2,7 @@
 
 > **"The founder/developer is a creative director and decision maker, NOT a manual QA tester."**
 
-Stop your AI coding agents (Claude Code, Cursor, Windsurf, Antigravity) from hallucinating completion. Enforce blast-radius analysis, task-size calibration, live DB roundtrips with guaranteed cleanup, headless Playwright rehydration, and deterministic terminal receipts before declaring any task complete.
+Stop your AI coding agents (Claude Code, Cursor, Windsurf, OpenCode, Cline, Aider, Antigravity) from hallucinating completion. Enforce blast-radius analysis, task-size calibration, live DB roundtrips with guaranteed cleanup, headless Playwright rehydration, and deterministic terminal receipts before declaring any task complete.
 
 Built and battle-tested by [BaseWorks](https://baseworks.in).
 
@@ -10,7 +10,7 @@ Built and battle-tested by [BaseWorks](https://baseworks.in).
 
 ## ⚡ The Lazy Founder Prompt (1-Click Install)
 
-Don't want to read this whole document? **Copy and paste this into Claude Code, Cursor, Windsurf, or Antigravity right now:**
+Don't want to read this whole document? **Copy and paste this into Claude Code, Cursor, Windsurf, OpenCode, Cline, Aider, or Antigravity right now:**
 
 ```markdown
 Read the autonomous verification engine from https://github.com/OL-Arvind/not-your-qa.
@@ -129,6 +129,16 @@ git clone https://github.com/OL-Arvind/not-your-qa.git .agents/skills/not-your-q
 Add this rule directly to your `.cursorrules` or `.windsurfrules`:
 ```markdown
 Enforce verification rules and the 5-Dimension Matrix from: https://raw.githubusercontent.com/OL-Arvind/not-your-qa/main/SKILL.md
+```
+
+### 4. OpenCode & Cline / Roo Code
+* **OpenCode**: Clone into `.opencode/skills/not-your-qa` or reference `SKILL.md` in your system prompt.
+* **Cline / Roo Code**: Add the contents of `SKILL.md` into your `.clinerules` or custom system prompt instructions.
+
+### 5. Aider
+Add the skill to your repo instructions or run:
+```bash
+aider --read https://raw.githubusercontent.com/OL-Arvind/not-your-qa/main/SKILL.md
 ```
 
 ---
