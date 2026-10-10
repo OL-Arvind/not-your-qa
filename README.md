@@ -21,6 +21,38 @@ I am a decision maker, NOT your manual QA tester. Calibrate scope (Tier 1/2/3) a
 
 ---
 
+## 🔄 The Paradigm Shift: What Actually Happens
+
+| Before `not-your-qa` | With `not-your-qa` |
+| :--- | :--- |
+| **Bloated Code Dumps**: Agent generates 1,000+ lines of untested code in 2 minutes. | **Minimal, Focused Code**: Agent writes concise, targeted implementations. |
+| **Fake Completion**: Claims *"Done!"* while buttons are unclickable and DB writes fail. | **Autonomous Adversarial Loop**: Agent writes test cases, launches headless browser, and **actively tries to break its own work like a real user**. |
+| **Founder as QA Intern**: You spend 30 minutes clicking in the browser finding broken flows. | **Founder as Creative Director**: You sit back while **80%+ of obvious runtime bugs are caught and fixed in the agent's internal loop**. |
+| **Silent Regressions**: Refactoring breaks existing features without warning. | **Blast Radius Audit**: Upstream callers and projections are verified before completion. |
+
+---
+
+## 🛠️ Mandatory Prerequisite: Headless Playwright
+
+**Headless Playwright is the non-negotiable engine behind Dimension 5 (UI Lifecycle & Rehydration).**
+
+Without Playwright, an AI agent cannot verify what actually happens in the browser when real events fire, network requests fail, or the page undergoes a hard reload (`F5`).
+
+Run this once in your project root:
+
+```bash
+# 1. Install Playwright test runner
+npm install -D @playwright/test
+
+# 2. Install headless Chromium (fast, lightweight, no desktop windows needed)
+npx playwright install chromium
+```
+
+> **Why Headless Chromium?**  
+> Tests run in **< 3 seconds** in the background. The agent never opens distracting desktop browser windows or fills your context window with megabytes of raw HTML. It runs headlessly and prints a clean 3-line terminal receipt.
+
+---
+
 ## The Problem: Agent Delusion
 
 When AI coding agents complete a task, they naturally tend toward optimistic assumptions:
