@@ -1,6 +1,6 @@
 # 🛡️ not-your-qa
 
-> **"The founder is a creative director and decision maker, NOT a manual QA tester."**
+> **"The founder/developer is a creative director and decision maker, NOT a manual QA tester."**
 
 Stop your AI coding agents (Claude Code, Cursor, Windsurf, Antigravity) from hallucinating completion. Enforce blast-radius analysis, task-size calibration, live DB roundtrips with guaranteed cleanup, headless Playwright rehydration, and deterministic terminal receipts before declaring any task complete.
 
